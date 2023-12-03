@@ -10,7 +10,6 @@
         <!-- <script src="/js/jquery-3.4.1.min.js"></script> -->
         <!-- <script src="/js/menu.js"></script> -->
     </head>
-    </head>
     <body>
         <header id="mainHeader">
             <address>
@@ -45,9 +44,9 @@
                 <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <ul>
                     <li><a href="/index.html" id="enCours">ACCUEIL</a></li>
-                    <li><a href="#">VENTE</a></li>
-                    <li><a href="#">LOCATION</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="/vente.html">VENTE</a></li>
+                    <li><a href="/location.html">LOCATION</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
             <button id="menuToggle"><img src="/images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu"></button>
@@ -69,7 +68,7 @@
                 <article id="secondArticle">
                 <div class="article">
                     <h1>LE MEILLEUR DE L'AUTOMOBILE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci mollitia vitae laudantium iste sapiente animi neque incidunt aspernatur ipsum hic deserunt necessitatibus ut repudiandae, exercitationem, dolor corrupti alias inventore, accusantium distinctio error quae.</p>
+                    <p class="border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci mollitia vitae laudantium iste sapiente animi neque incidunt aspernatur ipsum hic deserunt necessitatibus ut repudiandae, exercitationem, dolor corrupti alias inventore, accusantium distinctio error quae.</p>
                     <ul>
                         <li>Lorem ipsum dolor sit amet.</li>
                         <li>Lorem ipsum dolor sit amet.</li>
@@ -100,55 +99,107 @@
                     <div>
                         <img src="/images/vehicule2.jpg" alt="bmw 535i" class="audi">
                     </div>
-                    <div>
-                        <p>BMW 535I, NAVI, LEATHER, ABS</p>
-                        <p>5 500 €</p>
+                    <div class="vehiculeInfo">
+                        <p class="vehiculeDescription">BMW 535I, NAVI, LEATHER, ABS</p>
+                        <p class="price">5 500 €</p>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="/images/vehicule2.jpg" alt="bmw 328i" class="audi">
                     </div>
-                    <div>
-                        <p>BMW 328I, SPORT LINE BODY KIT</p>
-                        <p>8 000 €</p>
+                    <div class="vehiculeInfo">
+                        <p class="vehiculeDescription">BMW 328I, SPORT LINE BODY KIT</p>
+                        <p class="price">8 000 €</p>
                     </div>
                 </li>
                 <li>
                     <div>
                         <img src="/images/vehicule2.jpg" alt="ford explorer" class="audi">
                     </div>
-                    <div>
-                        <p>FORD EXPLORER 2015 4WD</p>
-                        <p><span>9 000 €</span>8 200 €</p>
+                    <div class="vehiculeInfo">
+                        <p class="vehiculeDescription">FORD EXPLORER 2015 4WD</p>
+                        <p class="price"><span class="overPrice">9 000 €</span>8 200 €</p>
                     </div>
                 </li>
             </ul>
+        </section>
+        <section id="choose">
+            <h1>Pourquoi nous choisir?</h1>
+            <ul>
+                <li>
+                    <div>
+                        <img src="/images/icon1.png" alt="icone1" class="pict">
+                    </div>
+                    <div>
+                        <h3>financement</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quis saepe velit nulla numquam exercitationem repellendus placeat sapiente architecto explicabo.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="/images/icon2.png" alt="icone2" class="pict">
+                    </div>
+                    <div>
+                        <h3>réactivité de l'équipe technique</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quis saepe velit nulla numquam exercitationem repellendus placeat sapiente architecto explicabo.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="/images/icon3.png" alt="icone3" class="pict">
+                    </div>
+                    <div>
+                        <h3>à l'écoute de notre clientèle</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quis saepe velit nulla numquam exercitationem repellendus placeat sapiente architecto explicabo.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="/images/icon4.png" alt="icone4" class="pict">
+                    </div>
+                    <div>
+                        <h3>service &amp; maintenance</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quis saepe velit nulla numquam exercitationem repellendus placeat sapiente architecto explicabo.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="form">
+            <a href="/contact.html" class="contact">Contactez nous</a>
+            </div>
+        </section>
+        <section id="buyAndRent">
+            <div class="buyAndRent">
+                <h1>club auto<br><span id="white">vente et location</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ut voluptates accusamus officiis explicabo blanditiis delectus corrupti distinctio sit illum deleniti nam. Veritatis adipisci consequuntur distinctio a accusantium harum aperiam!</p>
+            </div>
         </section>
         </main><!--Ici se termine le #pageContent-->
         <footer id="mainFooter">
             <ul>
                 <li>
-                    <h3><span class="blue">CLUB</span> AUTO</h3>
+                    <h3><span class="blue">club</span> auto</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Fuga ullam debitis, rem amet nisi aliquam <br>reiciendis placeat molestiae expedita?</p>
                 </li>
                 <li>
-                    <h3>HORAIRE D'OUVERTURE</h3>
-                        <p>Lundi - Samedi : 9:00 - 17:00</p>
-                        <p>Dimanche et jours fériés : Fermé</p>
+                    <h3>horaire d'ouverture</h3>
+                        <p>Lundi - Samedi : <span id="white">09:00 - 17:00</span></p>
+                        <p>Dimanche et jours fériés : <span id="white">Fermé</span></p>
                 </li>
                 <li>
-                    <h3>NEWSLETTER</h3>
+                    <h3>newsletter</h3>
                     <div>
                         <form>
                         <input type="email" placeholder="Entrez votre email" name="email" id="email" required>
-                        <button type="submit" name="btnEnvoiForm" title="Envoyer"><iconify-icon icon="mingcute:rss-fill"></iconify-icon></button>
+                        <button type="submit" name="btnEnvoiForm" title="Envoyer" class="rss"><iconify-icon icon="fa6-solid:rss" class="iconRss"></iconify-icon>
+
+                        </button>
                         </form>
                         <p>Inscrivez-vous pour recevoir les dernières offres</p>
                     </div>
                 </li>
                 <li>
-                    <h3>RESEAUX SOCIAUX</h3>
+                    <h3>réseaux sociaux</h3>
                     <div class="logo">
                     <iconify-icon icon="ic:baseline-facebook" class="logo"></iconify-icon>
                     <iconify-icon icon="formkit:twitter" class="logo"></iconify-icon>
