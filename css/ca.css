@@ -33,14 +33,21 @@ address {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+    padding: 1rem;
 }
 
-address h1 {
+.title {
     font-size: xx-large;
+    font-weight: bolder;
 }
 
 address p {
     margin: 2% 0;
+}
+
+address img {
+    height: 2rem;
+    padding: 0 0.2rem;
 }
 
 .orange {
@@ -57,7 +64,7 @@ address p {
     width: 15%;
 }
 
-#adresse, #telephone, #social {
+.adresse, .telephone, .social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,7 +144,7 @@ address p {
 }
 
 .image {
-    max-width: 600px;
+    max-width: 790px;
     max-height: auto;
 }
 
@@ -179,7 +186,7 @@ address p {
     padding: 1rem;
 }
 
-#vehiculesRecents h1 {
+#vehiculesRecents h2 {
     color: var(--white);
     text-align: center;
 }
@@ -235,7 +242,7 @@ address p {
     list-style: none;
 }
 
-#choose h1 {
+#choose h2 {
     text-align: center;
     margin: 2rem;
     font-weight: bold;
@@ -293,12 +300,12 @@ address p {
     height: 50rem;
 }
 
-#buyAndRent h1{
+#buyAndRent h2{
     text-transform: uppercase;
     font-weight: bold;
 }
 
-#white {
+.white {
     color: var(--white);
 }
 
@@ -366,30 +373,74 @@ address p {
     background-size:cover;
     max-width: 100%;
     height: 25rem;
+    margin: 0;
 }
 
 #contact {
-    display: block;
-    margin: 1rem;
-}
-
-#contact h1 {
+    background-color: var(--grey);
+    display: flex;
+    justify-content:center;
     text-align: center;
 }
 
-#frmContact {
+#form {
+    background-color: var(--white);
+    padding: 2rem 4rem;
+    margin: 4rem;
+}
+
+#frmContact{
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    text-align: center;
+}
+
+#contact h1 {
+    margin: 0;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: start;
 }
 
 .formContent {
     display: grid;
-    margin: 0 2rem;
-    padding: 0.5rem;
+    margin: 0 0.5rem;
+    padding: 1rem;
+}
+
+.formContent label {
+    text-align: start;
+    color: var(--black);
+    padding-bottom: 0.3rem;
+    font-size: small;
+}
+
+.formContent input {
+    background-color: var(--grey);
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: small;
+    text-align:start;
+}
+
+.formContent button {
+    background-color: var(--blue);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    width: 8rem;
+    height: 2.5rem;
 }
 
 #contact form textarea {
-    height: 150px;
+    background-color: var(--grey);
+    height: 7rem;
+    width: 18rem;
+    border: none;
+    padding: 0.5rem;
+    font-size: small;
     resize: none;
 }
 
