@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 :root {
     --white:#FFFFFF;
@@ -16,7 +17,7 @@
 }
 
 h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .accessibility {
@@ -120,14 +121,23 @@ address p {
     font-weight: bold;
 }
 
+.border {
+    border-top: solid var(--grey);
+    padding: 2rem 0;
+}
+
 #firstArticle, #secondArticle {
     display: flex;
     padding: 1rem;
     align-items: flex-start;
 }
 
+#secondArticle li {
+    padding : 0.5rem;
+}
+
 .image {
-    max-width: 49rem;
+    max-width: 600px;
     max-height: auto;
 }
 
@@ -183,12 +193,12 @@ address p {
     display: flex;
     justify-content:center;
     list-style: none;
-    border-top: solid var(--brown);
     padding: 2rem 9rem;
 }
 
 #vehiculesRecents li {
-    padding: 0 1rem;
+    border-top: solid var(--brown);
+    padding: 2rem 1rem;
 }
 
 .audi {
@@ -196,11 +206,117 @@ address p {
     max-height: auto;
 }
 
+.vehiculeInfo {
+    background-color: var(--black);
+    justify-content: space-between;
+    display: flex;
+    border-bottom: solid var(--grey);
+}
+
+.vehiculeDescription {
+    padding: 1rem;
+}
+
+.price {
+    background-color: var(--blue);
+    text-align:center;
+    padding: 1rem;
+    display: grid;
+}
+
+.overPrice {
+    text-decoration: line-through;
+    font-size: small;
+    color: var(--black);
+}
+
+#choose {
+    display: block;
+    list-style: none;
+}
+
+#choose h1 {
+    text-align: center;
+    margin: 2rem;
+    font-weight: bold;
+}
+
+#choose ul {
+    display: flex;
+    list-style: none;
+    margin: 4rem 8rem;
+} 
+
+#choose h3 {
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+
+#choose p {
+    margin-left: 1rem;
+}
+
+#choose li {
+    display: flex;
+    padding: 2rem;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.pict {
+    padding: 0;
+    max-width: 4rem;
+    height: 4rem;
+}
+
+#buyAndRent {
+    display: flex;
+    align-items:center;
+    justify-content:start;
+    margin-top : 4rem;
+    background-image: url(/images/vehicule3.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 50rem;
+}
+
+#buyAndRent h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#white {
+    color: var(--white);
+}
+
+.buyAndRent {
+    background-color: var(--orange);
+    opacity: 0.95;
+    margin-left: 9rem;
+    margin-right: 50rem;
+    padding: 3rem;
+    font-weight: bold;
+}
+
 #mainFooter {
     background-color: var(--black);
 }
 
 #mainFooter h3 {
+    text-transform: uppercase;
     color: var(--white);
     font-size: small;
 }
@@ -210,6 +326,7 @@ address p {
 }
 
 #mainFooter ul {
+    margin: 0;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -220,6 +337,14 @@ address p {
 #mainFooter li {
     display: block;
     list-style: none;
+}
+
+.rss {
+    background-color: var(--brown);
+}
+
+.iconRss {
+    color: var(--white);
 }
 
 .blue {
@@ -235,6 +360,38 @@ address p {
 .logo {
     color: var(--white);
 } 
+
+#vehiculeContact {
+    background-image: url(/images/vehicule3.jpg);
+    background-size:cover;
+    max-width: 100%;
+    height: 25rem;
+}
+
+#contact {
+    display: block;
+    margin: 1rem;
+}
+
+#contact h1 {
+    text-align: center;
+}
+
+#frmContact {
+    display: flex;
+    justify-content: center;
+}
+
+.formContent {
+    display: grid;
+    margin: 0 2rem;
+    padding: 0.5rem;
+}
+
+#contact form textarea {
+    height: 150px;
+    resize: none;
+}
 
 
 
