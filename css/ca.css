@@ -444,6 +444,78 @@ address img {
     resize: none;
 }
 
+.vehicule {
+    margin-left: 11rem;
+    margin-right: 25rem;
+}
+
+#uppercase {
+    text-transform: uppercase;
+    font-size: small;
+    padding-bottom: 0.8rem;
+    border-bottom: solid var(--grey);
+    border-width: 2px;
+}
+
+.vehicule img {
+    width : 82rem
+}
+
+.vehicule h2 {
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+
+.vehicule h3 {
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.vehicule p {
+    margin: 2rem 0;
+}
+
+.rubriques {
+    margin: 2rem 0;
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.rubriques li {
+    padding: 0 1rem;
+    line-height: 3;
+}
+
+#whiteBackground {
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0 0.5rem;
+    font-weight: bold;
+    border-top: solid var(--brown);
+}
+
+#mediumFont {
+    font-size:large;
+}
+
+#italicFont {
+    font-style: italic;
+    padding: 0 2rem;
+    border-left: solid var(--brown);
+}
+
+.options {
+    padding: 0.5rem;
+}
+
+.options li {
+    padding: 0.5rem 0;
+}
 
 
 /**
