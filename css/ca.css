@@ -70,7 +70,7 @@ address img {
     justify-content: center;
 }
 
-#vehiculeAccueil {
+#mainNav {
     background-image: url(/images/vehicule1.jpg);
     background-size:cover;
     max-width: 100%;
@@ -87,12 +87,12 @@ address img {
 
 #mainNav {
     display: block;
-    background-color: var(--grey);
-    opacity: 0.75;
     justify-content: space-around;
 }
 
 #mainNav ul {
+    background-color: var(--grey);
+    opacity: 0.75;
     padding-right: 10rem;
     margin: 0;
     list-style: none;
@@ -109,6 +109,14 @@ address img {
     font-weight: bold;
 }
 
+#menuToggle{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--blue);
+    border: none;
+}
+
 #enCours {
     background-color: var(--brown);
     color: var(--white);
@@ -120,7 +128,7 @@ address img {
 }
 
 #doubleArticles {
-    display: grid;    
+    display: block;    
     padding: 1.5rem 8rem;
 }
 
@@ -144,7 +152,7 @@ address img {
 }
 
 .image {
-    max-width: 790px;
+    max-width: 800px;
     max-height: auto;
 }
 
@@ -516,6 +524,120 @@ address img {
 .options li {
     padding: 0.5rem 0;
 }
+
+@media screen and (max-width: 768px){
+    .title, .adresse, .horaires, .social {
+        display: none;
+    }
+    #mainNav {
+        background-color: none;
+        background-image: none;
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        padding-bottom: 10px;
+        display: none;
+    }
+    #mainNav ul {
+        background-color: var(--black);
+        opacity: 1;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    address {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: self-end;
+    }
+    #doubleArticles {
+        margin : 4rem 0;
+        padding: 0 2rem;
+    }
+    #firstArticle, #secondArticle {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        width: 25rem;
+    }
+    #rentOrBuy {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rent, .buy {
+        margin: 2rem 0;
+        padding: 0 9rem;
+    }
+    #vehiculesRecents {
+        margin: 2rem 0;
+    }
+    #vehiculesRecents h2 {
+        font-size: 3rem;
+    }
+    #vehiculesRecents ul, li{
+        margin: 0;
+        padding: 0;
+    }
+    .vehiculeInfo {
+        flex-direction: column-reverse;
+        align-items: start;
+        text-align: left;
+        padding: 0;
+    }
+    .price {
+        margin-left: 3rem;
+
+    }
+    .hidden {
+        display: none;
+    }
+    #choose h2 {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+    #choose ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    #choose li {
+        margin: 1.5rem 0;
+        padding: 0 2rem;
+    }
+    #buyAndRent{
+        display: grid;
+        margin: 2rem 0 0 0;
+        padding: 0;
+        height: 35rem;
+        width: 100%;
+    }
+    .buyAndRent {
+        margin:0.5rem 0;
+    }
+    #mainFooter ul{
+        flex-direction: column;
+    }
+    #mainFooter li {
+        margin: 0.5rem 0;
+    }
+}
+@media screen and (min-width: 768px){
+    #menuToggle{
+        display: none;
+    }
+}    
+
 
 
 /**
