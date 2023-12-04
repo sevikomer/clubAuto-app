@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/ca.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <!-- <script src="/js/jquery-3.4.1.min.js"></script> -->
-        <!-- <script src="/js/menu.js"></script> -->
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/menu.js"></script>
     </head>
     <body>
         <header id="mainHeader">
@@ -22,6 +22,7 @@
                             <p>75000 PARIS</p>
                         </div>
                     </div>
+                    <button id="menuToggle"><img src="/images/hamburger.svg" alt="Ouvrir / Fermer le menu"></button>
                     <div class="telephone">
                         <img src="/images/icon-telephone.png" alt="icone telephone" id="tel">
                         <div class="text">
@@ -38,7 +39,6 @@
                         <iconify-icon icon="formkit:twitter" class="logo"></iconify-icon>
                     </div>
             </address>
-            <div id="vehiculeAccueil">
             <nav id="mainNav">
                 <h2 class="accessibility">Menu principal</h2>
                 <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
@@ -49,8 +49,6 @@
                     <li><a href="/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
-            <button id="menuToggle"><img src="/images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu"></button>
-            </div>
         </header><!--Ici se termine le #mainHeader-->
         <main>
             <h1 id="vehiculeAccueilTitle">CLUB AUTO <span class="orangeTitle"> LE MEILLEUR DE L'AUTOMOBILE</span></h1>
@@ -66,17 +64,17 @@
                     </div>
                 </article>
                 <article id="secondArticle">
-                <div class="article">
-                    <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
-                    <p class="border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci mollitia vitae laudantium iste sapiente animi neque incidunt aspernatur ipsum hic deserunt necessitatibus ut repudiandae, exercitationem, dolor corrupti alias inventore, accusantium distinctio error quae.</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                    </ul>
-                </div>
+                    <div class="article">
+                        <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>
+                        <p class="border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci mollitia vitae laudantium iste sapiente animi neque incidunt aspernatur ipsum hic deserunt necessitatibus ut repudiandae, exercitationem, dolor corrupti alias inventore, accusantium distinctio error quae.</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
                 <div>
                     <img src="/images/entretien.jpg" alt="entretien" class="image">
                 </div>
@@ -104,7 +102,7 @@
                         <p class="price">5 500 €</p>
                     </div>
                 </li>
-                <li>
+                <li class="hidden">
                     <div>
                         <img src="/images/vehicule2.jpg" alt="bmw 328i" class="audi">
                     </div>
@@ -113,7 +111,7 @@
                         <p class="price">8 000 €</p>
                     </div>
                 </li>
-                <li>
+                <li class="hidden">
                     <div>
                         <img src="/images/vehicule2.jpg" alt="ford explorer" class="audi">
                     </div>
