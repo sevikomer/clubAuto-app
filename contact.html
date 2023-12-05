@@ -7,12 +7,13 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/ca.css">
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <!-- <script src="/js/jquery-3.4.1.min.js"></script> -->
-        <!-- <script src="/js/menu.js"></script> -->
+        <script src="/js/jquery-3.7.1.min.js"></script>
+        <script src="/js/menu.js"></script>
     </head>
     <body>
         <header id="mainHeader">
             <address>
+                <button id="menuToggle"><img src="/images/hamburger.svg" alt="Ouvrir / Fermer le menu"></button>
                     <div class="title">CLUB AUTO</div>
                     <div class="adresse">
                         <img src="/images/icone-adresse.png" alt="icone adresse" id="adresse">
@@ -38,7 +39,7 @@
                         <iconify-icon icon="formkit:twitter" class="logo"></iconify-icon>
                     </div>
             </address>
-            <div id="vehiculeContact">
+            <div id="contactMainNav">
             <nav id="mainNav">
                 <h2 class="accessibility">Menu principal</h2>
                 <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
@@ -46,10 +47,9 @@
                     <li><a href="/index.html">ACCUEIL</a></li>
                     <li><a href="/vente.html">VENTE</a></li>
                     <li><a href="/location.html">LOCATION</a></li>
-                    <li><a href="/contact.html"  id="enCours">CONTACT</a></li>
+                    <li><a href="/contact.html" id="enCours">CONTACT</a></li>
                 </ul>
             </nav>
-            <button id="menuToggle"><img src="/images/layout/hamburger.svg" alt="Ouvrir / Fermer le menu"></button>
             </div>
         </header><!--Ici se termine le #mainHeader-->
         <main id="contact">
@@ -62,14 +62,14 @@
                             <input type="text" placeholder="Entrez votre prénom" name="fName" id="fName" required autofocus>
                         </div>
                         <div class="formContent">
-                            <label for="email">Email*</label>
-                            <input type="email" placeholder="Entrez une adresse mail valide" name="email" id="email" required>
+                            <label for="lName">Nom*</label>
+                            <input type="text" placeholder="Entrez votre nom" name="lName" id="lName" required>
                         </div>
                     </div>
                     <div id="centerForm">
                         <div class="formContent">
-                            <label for="lName">Nom de famille*</label>
-                            <input type="text" placeholder="Entrez votre nom" name="lName" id="lName" required>
+                            <label for="email">Email*</label>
+                            <input type="email" placeholder="Entrez une adresse mail valide" name="email" id="email" required>
                         </div>		
                         <div class="formContent">
                             <label for="phoneNum">Téléphone</label>
