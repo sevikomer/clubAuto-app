@@ -152,8 +152,7 @@ address img {
 }
 
 .image {
-    max-width: 800px;
-    max-height: auto;
+    width: 800px;
 }
 
 .article {
@@ -468,7 +467,7 @@ address img {
 }
 
 .vehicule img {
-    width : 82rem
+    width : 100%;
 }
 
 .vehicule h2 {
@@ -528,7 +527,7 @@ address img {
     padding: 0.5rem 0;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     .indexTitle, .adresse, .horaires, .social {
         display: none;
     }
@@ -683,8 +682,27 @@ address img {
         padding-left: 2rem;
     }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     #menuToggle {
         display: none;
     }
-}    
+    #choose ul {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    #firstArticle, #secondArticle {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+} 
+@media screen and (min-width: 1280px){
+    #menuToggle {
+        display: none;
+    }
+    #choose ul {
+        flex-wrap: nowrap;
+    }
+    #firstArticle, #secondArticle {
+        flex-wrap: nowrap;
+    }
+}   
